@@ -1,3 +1,3 @@
-django-scheduler==0.7.2
+django-scheduler==0.7.4
 django-debug-toolbar==1.2.1
 Django==1.7
