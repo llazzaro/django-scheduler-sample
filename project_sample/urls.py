@@ -9,7 +9,7 @@ admin.autodiscover()
 urlpatterns = patterns(
     '',
     url(r'^$', TemplateView.as_view(template_name="homepage.html"),),
-    url(r'^fullcalendar/', TemplateView.as_view(template_name="fullcalendar.html"),),
+    url(r'^fullcalendar/', TemplateView.as_view(template_name="fullcalendar.html"), name='fullcalendar'),
     url(r'^schedule/', include('schedule.urls')),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
