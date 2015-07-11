@@ -84,7 +84,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'djangobower.finders.BowerFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     'django.contrib.humanize',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'djangobower',
     'schedule',
     'debug_toolbar',
     # Uncomment the next line to enable admin documentation:
@@ -169,3 +170,8 @@ LOGGING = {
         },
     }
 }
+
+BOWER_INSTALLED_APPS = (
+    'jquery',
+    'bootstrap'
+)
