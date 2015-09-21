@@ -3,7 +3,7 @@ django-scheduler-sample
 
 This is a sample project using django-scheduler and django-scheduler-views
 
-Instalation
+Installation
 =======================
 ```bash
 pip install -r requirements.txt
@@ -12,6 +12,8 @@ pip install -r requirements.txt
 Usage
 =======================
 ```bash
-python manage.py syncdb
+export DJANGO_SETTINGS_MODULE=sample_project.settings
+python manage.py bower install
+python manage.py migrate
 python manage.py runserver
 ```
