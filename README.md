@@ -12,7 +12,7 @@ pip install -r requirements.txt
 Usage
 =======================
 ```bash
-export DJANGO_SETTINGS_MODULE=sample_project.settings
+export DJANGO_SETTINGS_MODULE=project_sample.settings
 python manage.py bower install
 python manage.py migrate
 python manage.py runserver
