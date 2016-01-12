@@ -1,4 +1,4 @@
 -e git+https://github.com/llazzaro/django-scheduler.git@master#egg=django-scheduler
-Django==1.8
+Django==1.8.8
 django-debug-toolbar==1.4
 django-bower==5.0.4
