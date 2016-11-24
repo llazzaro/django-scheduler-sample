@@ -154,7 +154,8 @@ LOGGING = {
 
 BOWER_INSTALLED_APPS = (
     'jquery',
-    'bootstrap'
+    'bootstrap',
+    'fullcalendar#1.6.4'
 )
 
 TEMPLATES = [
