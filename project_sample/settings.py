@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': os.path.join(PROJECT_PATH, 'project_sample.db'),                      # Or path to database file if using sqlite3.
+        'NAME': os.path.join(PROJECT_PATH, 'project_sample.db'),
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     # 'debug_toolbar',
     'djangobower',
     'schedule',
+    'project_sample'
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -158,10 +159,9 @@ BOWER_INSTALLED_APPS = (
     'fullcalendar#1.6.4'
 )
 
-TEMPLATES = [
-{
+TEMPLATES = [{
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': [os.path.join(PROJECT_PATH,'templates')],
+    'DIRS': [os.path.join(PROJECT_PATH, 'templates')],
     'APP_DIRS': True,
     'OPTIONS': {
         'context_processors': [
@@ -172,4 +172,4 @@ TEMPLATES = [
             'django.template.context_processors.request',
         ],
     },
-},]
+}]
