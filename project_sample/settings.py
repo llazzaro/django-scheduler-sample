@@ -2,7 +2,6 @@
 import os
 
 PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
-
 DEBUG = True
 
 ADMINS = (
@@ -90,16 +89,18 @@ SECRET_KEY = '1-%gfd@@8l$8r=ck_7^dy5_x!a0f5%qfj@ix#!xig(_2zq&b&2'
 
 # List of callables that know how to import templates from various sources.
 
-MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
-)
+]
 
 ROOT_URLCONF = 'project_sample.urls'
 
