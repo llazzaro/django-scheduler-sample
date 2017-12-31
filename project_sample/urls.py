@@ -7,14 +7,9 @@ from django.conf import settings
 
 admin.autodiscover()
 
-scheduler_patterns = ([
-    url(r'^schedule/', include('schedule.urls')),
-], 'schedule')
-
-
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name="homepage.html"),),
-    url(r'^schedule/', include(scheduler_patterns, namespace='scheduler')),
+    url(r'^schedule/', include('schedule.urls')),
     url(r'^fullcalendar/', TemplateView.as_view(template_name="fullcalendar.html"), name='fullcalendar'),
     url(r'^admin/', admin.site.urls),
 ]
