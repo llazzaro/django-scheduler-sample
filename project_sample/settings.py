@@ -97,7 +97,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -115,9 +114,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'debug_toolbar',
     'djangobower',
     'schedule',
     'project_sample'
@@ -157,7 +154,6 @@ BOWER_INSTALLED_APPS = (
     'jquery',
     'jquery-ui',
     'bootstrap',
-    'fullcalendar'
 )
 
 TEMPLATES = [{
@@ -171,6 +167,7 @@ TEMPLATES = [{
             'django.template.context_processors.i18n',
             'django.template.context_processors.media',
             'django.template.context_processors.request',
+            'django.contrib.messages.context_processors.messages'
         ],
     },
 }]
