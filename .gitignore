@@ -21,6 +21,11 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+project_sample/assets/
+bower_components/
+.idea/
+venv/
+project_sample.db
 
 # Installer logs
 pip-log.txt
