@@ -1,4 +1,4 @@
-django==2.0.11
-django-debug-toolbar==1.9.1
+django
+django-debug-toolbar
 django-bower==5.2.0
-django-scheduler==0.8.7
+django-scheduler
